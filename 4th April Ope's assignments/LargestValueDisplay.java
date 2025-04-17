@@ -21,12 +21,13 @@ public class LargestValueDisplay {
 		else if (input1 == input2) {
 			System.out.print(0);
 		}
-		else if (rem1 == rem2) {
+
+		if (rem1 == rem2) {
 			if (input1 < input2) {
-				System.out.printf("Smallest number is: %d", input1);
+				System.out.printf("%nSmallest number is: %d", input1);
 			}
 			else if (input2 < input1) {
-				System.out.printf("Smallest number is: %d", input2);
+				System.out.printf("%nSmallest number is: %d", input2);
 			}
 		}
 	}

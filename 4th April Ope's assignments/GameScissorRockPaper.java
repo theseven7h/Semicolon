@@ -9,12 +9,13 @@ or draws. Here are sample runs:
 scissor (0), rock (1), paper (2): 2
  The computer is paper. You are paper too. It is a draw*/ 
 
-import java.util.Scanner; 
+import java.util.Scanner;
+
 
 public class GameScissorRockPaper {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-
+		
 		int compInput = (int)(Math.random() * 3);
 
 		System.out.print("scissor (0), rock (1), paper (2): ");
