@@ -10,12 +10,12 @@ public class OccurrenceOfMaxNumbers {
 		int max = -2000000;
 		
 		while (numbers != -1) {
-			numbers = input.nextInt();
 			if (numbers > max) {
 				max = numbers; 
 		 		count = 1;
 			}
 			else if (numbers == max) count++;
+			numbers = input.nextInt();
 			
 		}
 

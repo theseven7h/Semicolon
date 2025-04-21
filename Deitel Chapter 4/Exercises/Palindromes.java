@@ -27,15 +27,16 @@ public class Palindromes {
 
 				pal /= rem;
 				System.out.println(num);
-				//System.out.printf("%n%d", pal);
+				
 			}
 		}
 		System.out.printf("%n%d", num1);
-		/*if (num1 == num5) check++;
+		if (num1 == num5) check++;
 		if (num2 == num4) check++;
 		if (check == 2) System.out.printf("%n%d is a palindrome", number);
 		else System.out.printf("%n%d is not a palindrome", number);
-		System.out.printf("%n%d", number);*/
+		System.out.printf("%n%d", number);
+		
 	}
 }
 		
