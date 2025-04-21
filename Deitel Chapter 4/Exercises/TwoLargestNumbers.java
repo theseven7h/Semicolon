@@ -5,7 +5,6 @@ public class TwoLargestNumbers {
 		Scanner input = new Scanner(System.in);
 		int largest = -2000000;
 		int largest2 = -2000000;
-		int num3 = 0;
 		int count = 1;
 		
 		do {
