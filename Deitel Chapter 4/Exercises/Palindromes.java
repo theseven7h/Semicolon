@@ -13,30 +13,25 @@ public class Palindromes {
 		int number = pal;		
 		int rem = 1;
 		int num; int num1 = 0; int num2 = 0; int num3 = 0; int num4 = 0; int num5 = 0;
-		int check = 0;
 
 		for(int start = 1; start <= 5; start++) {
 			rem = 10;
-			for(int count = 1; count <= 1; count++) {
+			for(int count = 1; count <= 4; count++) {
 				num = pal % rem;
 				if (pal > 9999) num5 = num;
-				else if (rem > 999) num4 = num;
-				else if (rem > 99) num3 = num;
-				else if (rem > 9) num2 = num;
-				else num1 = num;
-
-				pal /= rem;
-				System.out.println(num);
+				else if (pal > 999) num4 = num;
+				else if (pal > 99) num3 = num;
+				else if (pal > 9) {num2 = num;
+				pal /= rem; num1 = pal;}
 				
+				pal /= rem;				
 			}
+
 		}
-		System.out.printf("%n%d", num1);
-		if (num1 == num5) check++;
-		if (num2 == num4) check++;
-		if (check == 2) System.out.printf("%n%d is a palindrome", number);
-		else System.out.printf("%n%d is not a palindrome", number);
-		System.out.printf("%n%d", number);
-		
+		if (num1 == num5 && num2 == num4) {
+			System.out.printf("%n%d is a palindrome", number);
+		}
+		else System.out.printf("%n%d is not a palindrome", number);			
 	}
 }
 		
