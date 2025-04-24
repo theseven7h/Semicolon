@@ -15,6 +15,14 @@ public class TableOfSquaresAndCubes{
 	System.out.printf("%d       %d      %d%n", eight, eight * eight, eight * eight * eight);
 	System.out.printf("%d       %d      %d%n", nine, nine * nine, nine * nine * nine);
 	System.out.printf("%d      %d     %d%n", ten, ten * ten, ten * ten * ten	);
-	
+
+		
+       int count = 1;
+	int row = 5;
+ 
+       while (count <= 20) {
+          System.out.println(count % 3 == 1 ? "########" : "++++++++");
+          ++count;
+       }	
 	}
 }
