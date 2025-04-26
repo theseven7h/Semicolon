@@ -5,7 +5,6 @@ public class Nokia {
 		Scanner input = new Scanner(System.in);
 		
 		String menu = """
-
 		1. Phone book
 		2. Messages
 		3. Chat
@@ -18,8 +17,7 @@ public class Nokia {
 		10. Reminders
 		11. Clock
 		12. Profiles
-		13. SIM services 
-		
+		13. SIM services
 		""";
 		System.out.print(menu);
 		int menuChoice = input.nextInt();
@@ -48,8 +46,7 @@ public class Nokia {
 				case 5: System.out.println("Edit"); break;
 				case 6: System.out.println("Assign tone"); break;
 				case 7: System.out.println("Send b'card"); break;
-				case 8: { System.out.println("""1. Type of view
-												2. Memory status"""); 
+				case 8: { System.out.println("1. Type of view\n2. Memory status"); 
 					int options = input.nextInt();
 					
 					switch (options) {
@@ -89,12 +86,12 @@ public class Nokia {
 				case 5: System.out.println("Templates"); break;
 				case 6: System.out.println("Smileys"); break;
 				case 7: {
-					System.out.println("1. Set\n2. Common");
+					System.out.println("1. Set 1\n2. Common");
 					int messageSettings = input.nextInt();
 					
 					switch (messageSettings) {
 						case 1: { 
-							System.out.println("1. Message centre number\n2. Message sent as\n3. Message validity");
+							System.out.print("1. Message centre number\n2. Message sent as\n3. Message validity");
 							int set1 = input.nextInt();
 							switch (set1) {
 								case 1: System.out.println("Message centre number"); break;
