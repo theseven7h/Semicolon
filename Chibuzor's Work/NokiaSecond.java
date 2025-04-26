@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Nokia {
+public class NokiaSecond {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
@@ -48,8 +48,7 @@ public class Nokia {
 				case 5: System.out.println("Edit"); break;
 				case 6: System.out.println("Assign tone"); break;
 				case 7: System.out.println("Send b'card"); break;
-				case 8: { System.out.println("""1. Type of view
-												2. Memory status"""); 
+				case 8: { System.out.println("1. Type of view\n2. Memory status"); 
 					int options = input.nextInt();
 					
 					switch (options) {
