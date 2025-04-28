@@ -13,7 +13,7 @@ public class Calculation {
 				case 1-> {
 					int sum = 0;
 					boolean addition = true;
-					while (;addition;) {
+					while (addition) {
 						
 						System.out.print("Enter the two numbers spaced: "); 
 						int num1 = input.nextInt();
