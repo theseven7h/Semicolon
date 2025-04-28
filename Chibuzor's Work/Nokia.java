@@ -58,7 +58,7 @@ public class Nokia {
 				}
 				case 9: System.out.println("Speed dials"); break;
 				case 10: System.out.println("Voice tags"); break;	
-				default: break;
+				//default: break;
 			}//switch phoneBook
 			}//case 1 menuChoice
 		
