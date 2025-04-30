@@ -4,6 +4,9 @@ public class NokiaSecond {
 	static Scanner input = new Scanner(System.in);
 	
 	public static void main(String[] args) {
+
+		int mainMenuChoice = 0;
+		do {
 		System.out.println();
 		String mainMenu = 
 		"""
@@ -13,12 +16,15 @@ public class NokiaSecond {
 		""";
 		
 		System.out.print(mainMenu);
-		int mainMenuChoice = input.nextInt();
+		mainMenuChoice = input.nextInt();
 		switch (mainMenuChoice) {
 			case 1: nokiaMenu();
-			default: break;
+			
 		}//switch mainMenu
+		} while (mainMenuChoice != 1);
 	}//main method
+
+
 		
 	public static void nokiaMenu() {
 		String menu = """
@@ -43,19 +49,19 @@ public class NokiaSecond {
 			int menuChoice = input.nextInt();
 		
 			switch (menuChoice) {
-				case 1: phoneBook();
-				case 2: messages();
-				case 3: chat();
-				case 4: callRegister();
-				case 5: tones();
-				case 6: settings();
-				case 7: callDivert();
-				case 8: games();
-				case 9: calculator();
-				case 10: reminders();
-				case 11: clock();
-				case 12: profiles();
-				case 13: simServices();
+				case 1: phoneBook(); break;
+				case 2: messages(); break;
+				case 3: chat(); break;
+				case 4: callRegister(); break;
+				case 5: tones(); break;
+				case 6: settings(); break;
+				case 7: callDivert(); break;
+				case 8: games(); break;
+				case 9: calculator(); break;
+				case 10: reminders(); break;
+				case 11: clock(); break;
+				case 12: profiles(); break;
+				case 13: simServices(); break;
 				default: break;
 			}//switch menuChoice
 		}//nokia menu method
@@ -326,7 +332,7 @@ public class NokiaSecond {
 				int infoService = input.nextInt();
 				switch (infoService) {
 					case 0: messages();
-					default: break;
+					default: messages(); break;
 				}//switch infoService
 				break;	
 				
