@@ -668,34 +668,34 @@ public class NokiaMenuLoop {
 			case 6: while (true) {
 			System.out.println("----KEYPAD TONES----\nKeypad tones\n0. Back\n");	
 			int keypadTones = input.nextInt();
-				switch (keypadTones) {
-					case 0: tones();
-				}//switch keypadTones
-				}//loop
+			switch (keypadTones) {
+				case 0: tones();
+			}//switch keypadTones
+			}//loop
 			
 			case 7: while (true) {
 			System.out.println("----WARNING AND GAME TONES----\nWarning snd game tones\n0. Back\n");	
 			int warningAndGameTones = input.nextInt();
-				switch (warningAndGameTones) {
-					case 0: tones();
-				}//switch warningAndGameTones
-				}//loop
+			switch (warningAndGameTones) {
+				case 0: tones();
+			}//switch warningAndGameTones
+			}//loop
 			
 			case 8: while (true) {
 			System.out.println("----VIBRATING ALERT----\nVibrating alert\n0. Back\n");	
 			int vibratingAlert = input.nextInt();
-				switch (vibratingAlert) {
-					case 0: tones();
-				}//switch vibratingAlert
-				}//loop
+			switch (vibratingAlert) {
+				case 0: tones();
+			}//switch vibratingAlert
+			}//loop
 			
-			case 9: System.out.println("----SCREEN SAVER----\nScreen saver\n0. Back\n");	
+			case 9: while (true) {
+			System.out.println("----SCREEN SAVER----\nScreen saver\n0. Back\n");	
 			int screenSaver = input.nextInt();
-				switch (screenSaver) {
-					case 0: tones();
-					default: break;
-				}//switch screenSaver
-				break;
+			switch (screenSaver) {
+				case 0: tones();
+			}//switch screenSaver
+			}//loop
 			
 			case 0: nokiaMenu();
 			
@@ -721,192 +721,228 @@ public class NokiaMenuLoop {
 		settingsChoice = input.nextInt();
 				
 		switch (settingsChoice) {
-			case 1: {
+			case 1: while (true) {
+				{
 				System.out.println("----CALL SETTINGS----\n1. Automatic redial\n2. Speed dialing\n3. Call waiting options\n4. Own number sending\n5. Phone line in use\n6. Automatic answer\n0. Back\n");
 				int callSettingsChoice = input.nextInt();
 						
 				switch (callSettingsChoice) {
-					case 1: System.out.println("----AUTOMATIC REDIAL----\nAutomatic redial\n0. Back\n");	
+					case 1: boolean automatic = true;
+					while (automatic) {
+					System.out.println("----AUTOMATIC REDIAL----\nAutomatic redial\n0. Back\n");	
 					int automaticRedial = input.nextInt();
 					switch (automaticRedial) {
-						case 0: settings();
-						default: break;
+						case 0: automatic = false;
 					}//switch automaticRedial
+					}//loop
 					break;
 					
-					case 2: System.out.println("----SPEED DIALLING----\nSpeed dialling\n0. Back\n");	
+					case 2: boolean speed = true;
+					while (speed) {
+					System.out.println("----SPEED DIALLING----\nSpeed dialling\n0. Back\n");	
 					int speedDialling = input.nextInt();
 					switch (speedDialling) {
-						case 0: settings();
-						default: break;
+						case 0: speed = false;
 					}//switch speedDialing
+					}//loop
 					break;
 					
-					case 3: System.out.println("----CALL WAITING OPTIONS----\nCall waiting options\n0. Back\n");	
+					case 3: boolean callWaiting = true;
+					while (callWaiting) {
+					System.out.println("----CALL WAITING OPTIONS----\nCall waiting options\n0. Back\n");	
 					int callWaitingOptions = input.nextInt();
 					switch (callWaitingOptions) {
-						case 0: settings();
-						default: break;
+						case 0: callWaiting = false;
 					}//switch callWaitingOptions
+					}//loop
 					break;
 					
-					case 4: System.out.println("----OWN NUMBER SENDING----\nOwn number sending\n0. Back\n");	
+					case 4: boolean ownNumber = true;
+					while (ownNumber) {
+					System.out.println("----OWN NUMBER SENDING----\nOwn number sending\n0. Back\n");	
 					int ownNumberSetting = input.nextInt();
 					switch (ownNumberSetting) {
-						case 0: settings();
-						default: break;
+						case 0: ownNumber = false;
 					}//switch ownNumberSetting
+					}//loop
 					break;
 					
-					case 5: System.out.println("----PHONE LINE IN USE----\nPhone line in use\n0. Back\n");	
+					case 5: boolean phoneLine = true;
+					while (phoneLine) {
+					System.out.println("----PHONE LINE IN USE----\nPhone line in use\n0. Back\n");	
 					int phoneLineInUse = input.nextInt();
 					switch (phoneLineInUse) {
-						case 0: settings();
-						default: break;
+						case 0: phoneLine = false;
 					}//switch phoneLineInUse
+					}//loop
 					break;
 					
-					case 6: System.out.println("----AUTOMATIC ANSWER----\nAutomatic answer\n0. Back\n");	
+					case 6: boolean autoAnswer = true;
+					while (autoAnswer) {
+					System.out.println("----AUTOMATIC ANSWER----\nAutomatic answer\n0. Back\n");	
 					int automaticAnswer = input.nextInt();
 					switch (automaticAnswer) {
-						case 0: settings();
-						default: break;
+						case 0: autoAnswer = false;
 					}//switch automaticAnswer
+					}//loop
 					break;
 					
-					case 0: nokiaMenu();
-					default: break;
+					case 0: settings();
 				}//switch callSettingsChoice
-				break;
 			}//case 1 settingsChoice
+			}//loop
 			
-			case 2: {
+			case 2: while (true) {
 				System.out.println("----PHONE SETTINGS----\n1. Language\n2. Cell info display\n3. Welcome note\n4. Network selection\n5. Lights\n6. Confirm SIM service actions\n0. Back\n");
 				int phoneSettingsChoice = input.nextInt();
 						
 				switch (phoneSettingsChoice) {
-					case 1: System.out.println("----LANGUAGE----\nLanguage\n0. Back\n");	
+					case 1: boolean languageB = true;
+					while (languageB) {
+					System.out.println("----LANGUAGE----\nLanguage\n0. Back\n");	
 					int language = input.nextInt();
 					switch (language) {
-						case 0: settings();
-						default: break;
+						case 0: languageB = false;
 					}//switch language
+					}//loop
 					break;
 					
-					case 2: System.out.println("----CELL INFO DISPLAY----\nCell info display\n0. Back\n");	
+					case 2: boolean cellInfo = true;
+					while (cellInfo) {
+					System.out.println("----CELL INFO DISPLAY----\nCell info display\n0. Back\n");	
 					int cellInfoDisplay = input.nextInt();
 					switch (cellInfoDisplay) {
-						case 0: settings();
-						default: break;
+						case 0: cellInfo = false;
 					}//switch cellInfoDisplay
+					}//loop
 					break;
 					
-					case 3: System.out.println("----WELCOME NOTE----\nWelcome note\n0. Back\n");	
+					case 3: boolean welcome = true;
+					while (welcome) {
+					System.out.println("----WELCOME NOTE----\nWelcome note\n0. Back\n");	
 					int welcomeNote = input.nextInt();
 					switch (welcomeNote) {
-						case 0: settings();
-						default: break;
+						case 0: welcome = false;
 					}//switch welcomeNote
+					}//loop
 					break;
 					
-					case 4: System.out.println("----NETWORK SELECTION----\nNetwork selection\n0. Back\n");	
+					case 4: boolean network = true; 
+					while (network) {
+					System.out.println("----NETWORK SELECTION----\nNetwork selection\n0. Back\n");	
 					int networkSelection = input.nextInt();
 					switch (networkSelection) {
-						case 0: settings();
-						default: break;
+						case 0: network = false;
 					}//switch networkSelection
+					}//loop
 					break;
 					
-					case 5: System.out.println("----LIGHTS----\nLights\n0. Back\n");	
+					case 5: boolean lightsB = true;
+					while (lightsB) {
+					System.out.println("----LIGHTS----\nLights\n0. Back\n");	
 					int lights = input.nextInt();
 					switch (lights) {
-						case 0: settings();
-						default: break;
+						case 0: lightsB = false;
 					}//switch lights
+					}//loop
 					break;
 					
-					case 6: System.out.println("----CONFIRM SIM SERVICE ACTIONS----\nConfirm SIM service actions\n0. Back\n");	
+					case 6: boolean simServiceActions = true;
+					while (simServiceActions) {
+					System.out.println("----CONFIRM SIM SERVICE ACTIONS----\nConfirm SIM service actions\n0. Back\n");	
 					int confirmSimServiceActions = input.nextInt();
 					switch (confirmSimServiceActions) {
-						case 0: settings();
-						default: break;
+						case 0: simServiceActions = false;
 					}//switch confirmSimServiceActions
+					}//loop
 					break;
 					
-					case 0: nokiaMenu();
-					default: break;
+					case 0: settings();
 				}//switch phoneSettingsChoice
-				break;
-			}//case 2 settingsChoice
+			}//loop
 		
-			case 3: {
-				System.out.println("----SECURITY SETTINGS----1. PIN code request\n2. Call barring service\n3. Fixed dialling\n4. Closed user group\n5. Phone security\n6. Change access codes\n0. Back\n");
+			case 3: while (true) {
+				System.out.println("----SECURITY SETTINGS----\n1. PIN code request\n2. Call barring service\n3. Fixed dialling\n4. Closed user group\n5. Phone security\n6. Change access codes\n0. Back\n");
 				int securitySettingsChoice = input.nextInt();
 				
 				switch (securitySettingsChoice) {
-					case 1: System.out.println("----PIN CODE REQUEST----\nPIN code request\n0. Back\n");	
+					case 1: boolean pinCode = true;
+					while (pinCode) {
+					System.out.println("----PIN CODE REQUEST----\nPIN code request\n0. Back\n");	
 					int pinCodeRequest = input.nextInt();
 					switch (pinCodeRequest) {
-						case 0: settings();
-						default: break;
+						case 0: pinCode = false;
 					}//switch pinCodeRequest
+					}//loop
 					break;
 					
-					case 2: System.out.println("----CALL BARRING SERVICE----\nCall barring service\n0. Back\n");	
+					case 2: boolean callBarring = true;
+					while (callBarring) {
+					System.out.println("----CALL BARRING SERVICE----\nCall barring service\n0. Back\n");	
 					int callBarringService = input.nextInt();
 					switch (callBarringService) {
-						case 0: settings();
-						default: break;
+						case 0: callBarring = false;
 					}//switch callBarringService
+					}//loop
 					break;
 					
-					case 3: System.out.println("----FIXED DIALLING----\nFixed dialling\n0. Back\n");	
+					case 3: boolean fixedDiallingB = true;
+					while (fixedDiallingB) {
+					System.out.println("----FIXED DIALLING----\nFixed dialling\n0. Back\n");	
 					int fixedDialling = input.nextInt();
 					switch (fixedDialling) {
-						case 0: settings();
-						default: break;
+						case 0: fixedDiallingB = false;
 					}//switch fixedDialling
+					}//loop
 					break;
 					
-					case 4: System.out.println("----CLOSED USER GROUP----\nClosed user group\n0. Back\n");	
+					case 4: boolean closedUser = true;
+					while (closedUser) {
+					System.out.println("----CLOSED USER GROUP----\nClosed user group\n0. Back\n");	
 					int closedUserGroup = input.nextInt();
 					switch (closedUserGroup) {
-						case 0: settings();
-						default: break;
+						case 0: closedUser = false;
 					}//switch closedUserGroup
+					}//loop
 					break;
 					
-					case 5: System.out.println("----PHONE SECURITY----\nPhone security\n0. Back\n");	
+					case 5: boolean phoneSecurityB = true;
+					while (phoneSecurityB) {
+					System.out.println("----PHONE SECURITY----\nPhone security\n0. Back\n");	
 					int phoneSecurity = input.nextInt();
 					switch (phoneSecurity) {
-						case 0: settings();
-						default: break;
+						case 0: phoneSecurityB = false;
 					}//switch phoneSecurity
+					}//loop
 					break;
 					
-					case 6: System.out.println("----CHANGE ACCESS CODES----\nChange access codes\n0. Back\n");	
+					case 6: boolean accessCodes = true;
+					while (accessCodes) {
+					System.out.println("----CHANGE ACCESS CODES----\nChange access codes\n0. Back\n");	
 					int changeAccessCodes = input.nextInt();
 					switch (changeAccessCodes) {
-						case 0: settings();
-						default: break;
+						case 0: accessCodes = false;
 					}//switch changeAccessCodes
+					}//loop
 					break;
-					default: break;
+
+					case 0: settings();
 				}// switch securitySettingsChoice
-				break;
-			}//case 3 settingsChoice
-			case 4: System.out.println("----RESTORE FACTORY SETTINGS----\nRestore factory settings\n0. Back\n");	
+			}//loop settingsChoice
+
+			case 4: boolean restoreFactory = true;
+				while (restoreFactory) {
+				System.out.println("----RESTORE FACTORY SETTINGS----\nRestore factory settings\n0. Back\n");	
 				int restoreFactorySettings = input.nextInt();
 				switch (restoreFactorySettings) {
 					case 0: settings();
-					default: break;
 				}//switch restoreFactorySettings
-				break;
+				}//loop
 				
 			case 0: nokiaMenu();
 		}//switch settingsChoice
 		} while (settingsChoice < 0 || settingsChoice > 4);
-	}//Tones method
+	}//settingd method
 	
 	public static void callDivert() {
 		int callDivert;
@@ -940,7 +976,6 @@ public class NokiaMenuLoop {
 		calculator = input.nextInt();
 		switch (calculator) {
 			case 0: nokiaMenu();
-		
 		}//switch calculator
 		} while (calculator != 0);
 	}//calculator method
@@ -963,53 +998,55 @@ public class NokiaMenuLoop {
 		System.out.println("----CLOCK----\n1. Alarm clock\n2. Clock settings\n3. Date setting\n4. Stopwatch\n5. Countdown timer\n6. Auto update of date and time\n0. Back");
 		clockChoice = input.nextInt();		
 		switch (clockChoice) {
-			case 1: System.out.println("----ALARM CLOCK----\nAlarm clock\n0. Back\n");	
+			case 1: while (true) {
+				System.out.println("----ALARM CLOCK----\nAlarm clock\n0. Back\n");	
 				int alarmClock = input.nextInt();
 				switch (alarmClock) {
 					case 0: clock();
-					default: break;
 				}//switch alarmClock
-				break;
+				}//loop
 
-			case 2: System.out.println("----CLOCK SETTINGS----\nClock settings\n0. Back\n");
+			case 2: while (true) {
+				System.out.println("----CLOCK SETTINGS----\nClock settings\n0. Back\n");
 				int clockSettings = input.nextInt();		
 				switch (clockSettings) {
 					case 0: clock();
 					default: break;
 				}//switch reminders
-				break;
+				}//loop
 			
-			case 3: System.out.println("----DATE SETTING----\nDate setting\n0. Back\n");
+			case 3: while (true) {
+				System.out.println("----DATE SETTING----\nDate setting\n0. Back\n");
 				int dateSetting = input.nextInt();		
 				switch (dateSetting) {
 					case 0: clock();
-					default: break;
 				}//switch dateSetting
-				break;
+				}//loop
 			
-			case 4: System.out.println("----STOPWATCH----\nStopwatch\n0. Back\n");
+			case 4: while (true) {
+				System.out.println("----STOPWATCH----\nStopwatch\n0. Back\n");
 				int stopwatch = input.nextInt();		
 				switch (stopwatch) {
 					case 0: clock();
-					default: break;
 				}//switch stopwatch
-				break;
+				}//loop
 			
-			case 5: System.out.println("----COUNTDOWN TIMER----\nCountdown timer\n0. Back\n");
+			case 5: while (true) {
+				System.out.println("----COUNTDOWN TIMER----\nCountdown timer\n0. Back\n");
 				int countdownTimer = input.nextInt();		
 				switch (countdownTimer) {
 					case 0: clock();
-					default: break;
 				}//switch countdownTimer
-				break;
+				}//loop
 			
-			case 6: System.out.println("----AUTO UPDATE OF DATE AND TIME----\nAuto update of date and time\n0. Back\n");
+			case 6: while (true) {
+				System.out.println("----AUTO UPDATE OF DATE AND TIME----\nAuto update of date and time\n0. Back\n");
 				int autoupdate = input.nextInt();		
 				switch (autoupdate) {
 					case 0: clock();
-					default: break;
 				}//switch autoupdate
-				break;
+				}//loop
+
 			case 0: nokiaMenu();
 		}//switch clockChoice
 		} while (clockChoice < 0 || clockChoice > 6);
