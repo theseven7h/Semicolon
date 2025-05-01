@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class anyLengthPalindrome {
+public class AnyLengthPalindrome {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
@@ -9,13 +9,14 @@ public class anyLengthPalindrome {
 
 		int toNumber = Integer.valueOf(userEntry);
 		int palindrome = toNumber;
-
+		
+		//System.out.print(toNumber);
 		int rem = 0;
 		int reversed = 0;
 		//System.out.print(userEntry.length());
-		for (int count = userEntry.length(); count >= 1; count++) {
+		for (int count = userEntry.length(); count >= 1; count--) {
 			rem = toNumber % 10;
-			reversed *= 10 + (rem);
+			reversed = (reversed * 10) + rem;
 			toNumber /= 10; 
 		}
 		if (palindrome == reversed) System.out.println(palindrome + " is a palindrome");
