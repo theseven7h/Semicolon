@@ -25,6 +25,6 @@ public class KataTest {
 		
 		System.out.println(Kata.factorOf(number1));
 
-		System.out.print(Kata.isPrimeNumber(number1));*/
+		System.out.print(Kata.isPrimeNumber(number1));
 	}
 }
