@@ -10,8 +10,11 @@ public class TaskArraysTest {
 		{9.5, 1, 3, 1}
 		};
 		
-		System.out.print("Enter the column index to sum: ");
+		/*System.out.print("Enter the column index to sum: ");
 		int columnIndex = input.nextInt();
 		System.out.printf("Sum of the elements at column %d is %.1f", columnIndex, TaskArrays.sumColumn(numbers, columnIndex));
+		*/
+		
+		System.out.print(TaskArrays.sumMajorDiagonal(numbers));
 	}
 }
