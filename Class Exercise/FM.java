@@ -18,8 +18,15 @@ public class FM {
 			}			
 		}
 		int [] result = {min, max};
-		return result;
-		
+		return result;	
+	}
+	
+	public static int productOf(int numberOne, int numberTwo) {
+		int product = 0;
+		for (int count = 0; count < numberTwo; count++) {
+			product += numberOne;
+		}
+		return product;
 	}
 	
 	public static int[] sort(int[] numbers) {
@@ -32,8 +39,7 @@ public class FM {
 				if (numbers[count2] <= presentSmallest) {
 					presentSmallest = numbers[count2];
 					presentIndex = count2;
-				}
-				
+				}	
 			}
 			numbers[presentIndex] = numbers[count];
 			numbers[count] = presentSmallest;
@@ -41,34 +47,20 @@ public class FM {
 		return numbers;
 	}
 	
-	public static int[] sortIn(int[] numbers) {
-		int presentIndex = 0;
-		
-		for (int count = 0; count < numbers.length; count++) {
-			for (int count2 = count; count2 < numbers.length; count2++) {
-				if (numbers[count2] <= numbers[count2 + 1]) {
-					presentSmallest = numbers[count2];
-					presentIndex = count2;
-				}
-				
-			}
-			numbers[presentIndex] = numbers[count];
-			numbers[count] = presentSmallest;
+	public static int[] squareNumbersIn(int[] numbers) {
+		int[] squares = new int[numbers.length];
+		for (int i = 0; i < numbers.length; i++) {
+			squares[i] = numbers[i] * numbers[i];
 		}
-		return numbers;
+		return squares;
 	}
 	
-	
-	
-	
-	
-	
-	
+	public static int[] sortSquaresOf(int[] numbers) {
+		return sort(squareNumbersIn(numbers));
+	}
 	
 	public static void main(String[] args) {
-		int[] numbers = {8,0,1,4,9,2};
-		//System.out.print(Arrays.toString(maxAndMinSumsIn(numbers)));
-		System.out.print(Arrays.toString(sortIn(numbers)));
-
+		int[] numbers = {9,2,7,0,5};
+		System.out.print(Arrays.toString(sortSquaresOf(numbers)));
 	}
 }
