@@ -12,8 +12,8 @@ public class TestUniqueValues {
 	
 	@Test
 	void testSumUniqueInFunctionReturnsRightSum() {
-		int[] numbers = {1,2,3,2};
-		assertEquals(4, unique.sumUniqueIn(numbers));	
+		int[] numbers = {1,2,3,2,5,6};
+		assertEquals(15, unique.sumUniqueIn(numbers));	
 	}
 	
 	@Test

@@ -12,8 +12,8 @@ public class TestLargest {
 	
 	@Test
 	void testtestLocateLargestOfFunctionReturnsRightSum() {
-		double[][] numbers = {{1.0,3.0},{4.0,5.0},{6.0,7.0}};
-		int[] expected = {2,1};
+		double[][] numbers = {{1.0,3.0},{4.0,70.6},{6.0,7.0}};
+		int[] expected = {1,1};
 		assertArrayEquals(expected, large.locateLargestOf(numbers));	
 	}
 	

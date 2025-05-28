@@ -13,4 +13,9 @@ public class TestIndexCount {
 	void testIndexIsRightReturnsTrue() {
 		assertTrue(idx.indexIsRight("1210"));
 	}
+	
+	@Test
+	void testIndexIsWrongReturnsFalse() {
+		assertFalse(idx.indexIsRight("030"));
+	}
 }

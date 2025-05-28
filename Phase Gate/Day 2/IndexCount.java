@@ -20,6 +20,6 @@ public class IndexCount {
 			mainCheck += check;
 		}
 		
-		return number == mainCheck;
+		return number.equals(mainCheck);
 	}
 }

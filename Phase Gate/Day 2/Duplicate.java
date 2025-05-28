@@ -12,7 +12,7 @@ public class Duplicate {
 			}
 			if (count > 1) uniqueCount++;
 		}
-		return uniqueCount;
+		return uniqueCount/2;
 	}
 	
 	static int[] omitDuplicateIn(int[] numbers) {
