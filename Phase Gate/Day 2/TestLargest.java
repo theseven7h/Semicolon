@@ -6,15 +6,15 @@ public class TestLargest {
 	
 	@Test
 	void testLocateLargestOfFunctionExists() {
-		int[][] numbers = {{1,3},{4,5},{6,7}};
+		double[][] numbers = {{1.0,3.0},{4.0,5.0},{6.0,7.0}};
 		large.locateLargestOf(numbers);
 	}
 	
-	/*@Test
+	@Test
 	void testtestLocateLargestOfFunctionReturnsRightSum() {
-		int[][] numbers = {{1,3},{4,5},{6,7}};
+		double[][] numbers = {{1.0,3.0},{4.0,5.0},{6.0,7.0}};
 		int[] expected = {2,1};
-		assertEquals(expected, large.locateLargestOf(numbers));	
-	}*/
+		assertArrayEquals(expected, large.locateLargestOf(numbers));	
+	}
 	
 }
