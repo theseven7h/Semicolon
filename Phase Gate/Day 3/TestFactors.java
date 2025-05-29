@@ -22,12 +22,4 @@ public class TestFactors {
 		int[] expected2 = {1,2,3,4,6,8,12,24};
 		assertArrayEquals(actual2, expected2);
 	}
-	
-	/*@Test
-	void testSmallestIndexOfFunctionReturnsRightWhenElementsAreNegative() {
-		int[] numbers = {-1,-45,-73,-4,-95,-5};
-		int actual = idx.indexOf(numbers);
-		int expected = 0;
-		assertEquals(actual, expected);
-	}*/
 }
