@@ -16,5 +16,18 @@ public class TestSmallestIndexOfLargest {
 		int actual = idx.indexOf(numbers);
 		int expected = 1;
 		assertEquals(actual, expected);
+		
+		int[] numbers2 = {1,2,8,20,5};
+		int actual2 = idx.indexOf(numbers2);
+		int expected2 = 3;
+		assertEquals(actual2, expected2);
+	}
+	
+	@Test
+	void testSmallestIndexOfFunctionReturnsRightWhenElementsAreNegative() {
+		int[] numbers = {-1,-45,-73,-4,-95,-5};
+		int actual = idx.indexOf(numbers);
+		int expected = 0;
+		assertEquals(actual, expected);
 	}
 }
