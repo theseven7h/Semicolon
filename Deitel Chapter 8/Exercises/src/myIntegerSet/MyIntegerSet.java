@@ -52,12 +52,6 @@ public class MyIntegerSet {
         return count;
     }
 
-    public int elementsNotIn() {
-        int count = 0;
-        for(boolean stat : getSet()) if(!stat) count++;
-        return count;
-    }
-
     public boolean isEqual(MyIntegerSet set) {
         return set.elementsIn() == elementsIn();
     }
