@@ -1,11 +1,11 @@
-public class CommissionEmployee {
+public class CommissionEmployee1 {
     private final String firstName;
     private final String lastName;
     private final String socialSecurityNumber;
     private double grossSales;
     private double commissionRate;
 
-    public CommissionEmployee(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate) {
+    public CommissionEmployee1(String firstName, String lastName, String socialSecurityNumber, double grossSales, double commissionRate) {
         if (grossSales < 0.0) {
             throw new IllegalArgumentException("Gross sales must be >= 0.0");
         }

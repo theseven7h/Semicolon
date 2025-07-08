@@ -42,7 +42,7 @@ public class BasePlusCommissionEmployee {
     }
 
     public double earnings() {
-        return getBaseSalary() * employee.earnings();
+        return getBaseSalary() + employee.earnings();
     }
 
     public String toString() {
