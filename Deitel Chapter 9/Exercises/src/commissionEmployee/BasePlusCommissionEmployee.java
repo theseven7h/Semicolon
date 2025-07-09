@@ -1,3 +1,5 @@
+package commissionEmployee;
+
 public class BasePlusCommissionEmployee {
     private final CommissionEmployee employee;
     private double baseSalary;

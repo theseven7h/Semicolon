@@ -1,3 +1,5 @@
+package commissionEmployee;
+
 public class CommissionEmployee {
     private final String firstName;
     private final String lastName;
